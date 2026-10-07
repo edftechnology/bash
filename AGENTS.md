@@ -5,6 +5,13 @@ Cada agente possui seu próprio arquivo dedicado, que **não é mesclado** aqui,
 
 ---
 
+## Regras Mandatórias
+
+- **LaTeX**: **NUNCA** use a estrutura `\ifdefined\mainfile`. Todos os arquivos `.tex` devem seguir o template padrão com `\documentclass`, `\input{preamble.tex}`, `\input{variables.tex}`, `\begin{document}` e `\end{document}`.
+- **Identificadores**: Nomes de funções, variáveis e identificadores devem ser **SEMPRE** em inglês (EUA).
+
+---
+
 ## Estrutura
 
 - `docs/agents_git.md` → Instruções e fluxos de trabalho para Git, GitHub e GitLab  
@@ -34,3 +41,10 @@ No **ChatGPT Codex** (ou outra instância), você pode pedir para o modelo consi
 
 > **Nota:** Cada arquivo é independente e pode ser atualizado separadamente.  
 > O `AGENTS.md` serve apenas como guia/índice mestre.
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

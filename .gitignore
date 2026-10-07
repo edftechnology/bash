@@ -180,6 +180,8 @@ dmypy.json
 *.out
 *.ps
 *.pdf
+!docs/references/
+!docs/references/**
 *.svn
 *.swp
 *.swo
